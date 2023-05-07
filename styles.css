@@ -1,19 +1,44 @@
-/*Agregamos una imagen al body*/
+/*Selectores CSS*/
 body {
-  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
-
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg); /*Imagen para nuestra página.*/
+  font-family: sans-serif; /*Agregamos fuente al body en general*/
 }
 
 h1,
 h2,
 p {
-  text-align: center;
+  text-align: center; /*Propiedad de los textos (centrados), titulos y párrafos. */
 }
 
-/*Clase CSS*/
+h1, h2 {
+  font-family: Impact, serif; /*Cambio la fuente de los Titulos*/
+}
+
+/*Clases CSS*/
 .menu {
+  max-width: 500px; /*Agrego Max-Width para que no crezca mucho*/
   margin-left: auto;
   margin-right: auto;
-  background-color: burlywood;
-  width: 80%;
+  padding: 20px; /*padding-top, padding-bottom, padding-right y padding-left*/
+  background-color: burlywood; /*Color de la Página*/
+}
+
+.sabor,
+.porcion_torta {
+  text-align: left; 
+  width: 75%;
+}
+
+.precio {
+  text-align: right; /*Propiedad para los textos*/
+  width: 25%;
+}
+
+.cursiva {
+  font-style: italic;
+}
+
+/*Elementos en Linea*/
+.item p {
+  display: inline-block; /*Los párrafos se comportan como elementos de línea.*/ 
 }
