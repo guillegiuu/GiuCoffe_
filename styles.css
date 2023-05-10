@@ -1,52 +1,107 @@
-/*Selectores CSS*/
+/*Selectores*/
+/*Selector*/
 body {
-  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg); /*Imagen para nuestra página.*/
-  font-family: sans-serif; /*Agregamos fuente al body en general*/
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+  font-family: sans-serif;
+  padding: 20px;
 }
 
-h1,
-h2,
-p {
-  text-align: center; /*Propiedad de los textos (centrados), titulos y párrafos. */
-}
-
-h1, h2 {
-  font-family: Impact, serif; /*Cambio la fuente de los Titulos*/
-}
-
+/*Selector*/
 h1 {
   font-size: 40px;
 }
 
+/*Selector*/
 h2 {
   font-size: 30px;
+  text-transform: uppercase;
 }
 
-/*Clases CSS*/
-.menu {
-  max-width: 500px; /*Agrego Max-Width para que no crezca mucho*/
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20px; /*padding-top, padding-bottom, padding-right y padding-left*/
-  background-color: burlywood; /*Color de la Página*/
-}
-
-.sabor,
-.porcion_torta {
-  text-align: left; 
-  width: 75%;
-}
-
-.precio {
-  text-align: right; /*Propiedad para los textos*/
-  width: 25%;
-}
-
+/*Clases*/
 .cursiva {
   font-style: italic;
 }
 
-/*Elementos en Linea*/
+/*Selectores*/
+h1,
+h2,
+p {
+  text-align: center;
+}
+
+/*Clases*/
+.menu {
+  width: 80%;
+  background-color: burlywood;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  max-width: 500px;
+}
+
+/*Clases*/
+hr {
+  height: 2px;
+  background-color: brown;
+  border-color: brown;
+  border-width: brown;
+}
+
+/*Clases*/
+.bottom-line {
+  margin-top: 25px;
+}
+
+/*Selectores*/
+h1,
+h2 {
+  font-family: Impact, serif;
+}
+
+/*Clases con descendencia*/
 .item p {
-  display: inline-block; /*Los párrafos se comportan como elementos de línea.*/ 
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+/*Muchas-Clases*/
+.sabor,
+.porcion_torta {
+  text-align: left;
+  width: 75%;
+}
+
+/*Clases*/
+.precio {
+  text-align: right;
+  width: 25%;
+}
+
+
+/*FOOTER*/
+/*Selector*/
+footer {
+  font-size: 14px;
+}
+
+/*Selector*/
+a {
+  color: black;
+}
+
+/*Pseudo-Selector*/
+a:visited {
+  color: grey;
+}
+
+/*Pseudo-Selector*/
+a:hover {
+  color: brown;
+}
+
+/*Pseudo-Selector*/
+a:active {
+  color: white;
 }
